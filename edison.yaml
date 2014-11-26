@@ -2,6 +2,7 @@ extends:
   - file: linux.yaml
 
 parameters:
+  PATH: $CRAYPE_DIR/bin:/usr/bin:/bin
   CC: cc
   CXX: CC
   FC: ftn
