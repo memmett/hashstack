@@ -1,0 +1,13 @@
+extends:
+  - file: linux.yaml
+
+parameters:
+  CC: cc
+  CXX: CC
+  FC: ftn
+  HOST_MPICC: cc
+  HOST_MPICXX: CC
+  HOST_MPIF77: ftn
+  HOST_MPIF90: ftn
+  HOST_CMAKE: /usr/bin/cmake
+  HOST_PYTHON: /usr/bin/python
