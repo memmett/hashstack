@@ -1,8 +1,23 @@
-extends:
-  - file: linux.yaml
+package_dirs:
+- pkgs
+- base
+
+hook_import_dirs:
+- base
 
 parameters:
-  PATH: /opt/cray/craype/2.2.1/bin:/usr/bin:/bin
+  BASH: /bin/bash
+  PROLOGUE: | # by default, PROLOGUE is a no-op
+
+  pyver: '2.7'  # as in used in lib/pythonX.Y/site-packages
+  python_site_packages_rel: 'lib/python2.7/site-packages'
+
+  use_python_host_packages: false
+
+parameters:
+  platform: linux
+  fortran: true
+#  PATH: /opt/cray/craype/2.2.1/bin:/usr/bin:/bin
 #  PATH: $CRAYPE_DIR/bin:/usr/bin:/bin
   CC: cc
   CXX: CC
