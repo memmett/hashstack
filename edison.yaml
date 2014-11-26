@@ -16,6 +16,7 @@ parameters:
 
   platform: linux
   fortran: true
+  PATH: $PATH
 #  PATH: /opt/cray/craype/2.2.1/bin:/usr/bin:/bin
 #  PATH: $CRAYPE_DIR/bin:/usr/bin:/bin
   CC: cc
