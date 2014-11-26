@@ -14,7 +14,6 @@ parameters:
 
   use_python_host_packages: false
 
-parameters:
   platform: linux
   fortran: true
 #  PATH: /opt/cray/craype/2.2.1/bin:/usr/bin:/bin
