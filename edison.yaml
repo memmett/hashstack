@@ -2,7 +2,8 @@ extends:
   - file: linux.yaml
 
 parameters:
-  PATH: $CRAYPE_DIR/bin:/usr/bin:/bin
+  PATH: /opt/cray/craype/2.2.1/bin:/usr/bin:/bin
+#  PATH: $CRAYPE_DIR/bin:/usr/bin:/bin
   CC: cc
   CXX: CC
   FC: ftn
