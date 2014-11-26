@@ -16,7 +16,11 @@ parameters:
 
   platform: linux
   fortran: true
-  PATH: /opt/cray/atp/1.7.5/bin:/opt/cray/rca/1.0.0-2.0502.53711.3.127.ari/bin:/opt/cray/alps/5.2.1-2.0502.9041.11.6.ari/sbin:/opt/cray/alps/5.2.1-2.0502.9041.11.6.ari/bin:/opt/cray/dvs/2.5_0.9.0-1.0502.1873.1.145.ari/bin:/opt/cray/xpmem/0.1-2.0502.55507.3.2.ari/bin:/opt/cray/dmapp/7.0.1-1.0502.9501.5.219.ari/bin:/opt/cray/pmi/5.0.5-1.0000.10300.134.8.ari/bin:/opt/cray/ugni/5.0-1.0502.9685.4.24.ari/bin:/opt/cray/udreg/2.3.2-1.0502.9275.1.12.ari/bin:/opt/cray/mpt/7.0.4/gni/bin:/opt/cray/craype/2.2.1/bin:/usr/common/usg/bin:/usr/common/mss/bin:/usr/common/nsg/bin:/opt/moab/7.2.7/bin:/opt/moab/7.2.7/sbin:/opt/torque/4.2.7/sbin:/opt/torque/4.2.7/bin:/opt/cray/switch/1.0-1.0502.54233.2.96.ari/bin:/opt/cray/eslogin/eswrap/1.1.0-1.020200.1130.0/bin:/usr/syscom/nsg/sbin:/usr/syscom/nsg/bin:/opt/modules/3.2.6.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/bin
+  PATH: /usr/bin:/bin
+  PROLOGUE: |
+    module purge
+    module load PrgEnv-gnu
+  #PATH: /opt/cray/atp/1.7.5/bin:/opt/cray/rca/1.0.0-2.0502.53711.3.127.ari/bin:/opt/cray/alps/5.2.1-2.0502.9041.11.6.ari/sbin:/opt/cray/alps/5.2.1-2.0502.9041.11.6.ari/bin:/opt/cray/dvs/2.5_0.9.0-1.0502.1873.1.145.ari/bin:/opt/cray/xpmem/0.1-2.0502.55507.3.2.ari/bin:/opt/cray/dmapp/7.0.1-1.0502.9501.5.219.ari/bin:/opt/cray/pmi/5.0.5-1.0000.10300.134.8.ari/bin:/opt/cray/ugni/5.0-1.0502.9685.4.24.ari/bin:/opt/cray/udreg/2.3.2-1.0502.9275.1.12.ari/bin:/opt/cray/mpt/7.0.4/gni/bin:/opt/cray/craype/2.2.1/bin:/usr/common/usg/bin:/usr/common/mss/bin:/usr/common/nsg/bin:/opt/moab/7.2.7/bin:/opt/moab/7.2.7/sbin:/opt/torque/4.2.7/sbin:/opt/torque/4.2.7/bin:/opt/cray/switch/1.0-1.0502.54233.2.96.ari/bin:/opt/cray/eslogin/eswrap/1.1.0-1.020200.1130.0/bin:/usr/syscom/nsg/sbin:/usr/syscom/nsg/bin:/opt/modules/3.2.6.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/bin
 #  PATH: $CRAYPE_DIR/bin:/usr/bin:/bin
   CC: cc
   CXX: CC
